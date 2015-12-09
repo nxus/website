@@ -1,0 +1,25 @@
+{
+  "name": "@nxus/website",
+  "version": "1.0.0",
+  "description": "The Nxus Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nxus/website.git"
+  },
+  "author": "mjreich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nxus/website/issues"
+  },
+  "homepage": "https://github.com/nxus/website#readme",
+  "dependencies": {
+    "@nxus/core": "^2.0.1",
+    "@nxus/renderer": "^1.0.0",
+    "@nxus/router": "^2.0.1",
+    "@nxus/static-site": "^1.1.0"
+  }
+}
