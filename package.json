@@ -20,12 +20,20 @@
     "url": "https://github.com/nxus/website/issues"
   },
   "config": {
+    "staticSite": {
+      "collections": {
+        "_guides": {
+          "permalink": "/[guides]/%title"
+        }
+      }
+    }
   },
   "homepage": "https://github.com/nxus/website#readme",
   "dependencies": {
     "@nxus/core": "^2.3.10",
     "@nxus/renderer": "^2.3.0",
     "@nxus/router": "^2.3.0",
-    "nxus-static-site": "^2.3.0" 
+    "nxus-md-renderer": "0.0.1",
+    "nxus-static-site": "^2.3.0"
   }
 }
