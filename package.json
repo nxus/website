@@ -17,15 +17,12 @@
     "url": "https://github.com/nxus/website/issues"
   },
   "config": {
-    "staticSite": {
-      "output": "../website-src"
-    }
   },
   "homepage": "https://github.com/nxus/website#readme",
   "dependencies": {
-    "@nxus/core": "^2.0.2",
-    "@nxus/renderer": "^2.0.0",
-    "@nxus/router": "^2.0.1",
-    "@nxus/static-site": "^2.0.1"
+    "@nxus/core": "^2.3.0",
+    "@nxus/renderer": "^2.3.0",
+    "@nxus/router": "^2.3.0",
+    "nxus-static-site": "^2.3.0"
   }
 }
