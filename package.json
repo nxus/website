@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "The Nxus Website",
   "main": "index.js",
+  "engines": {
+    "node": "~4.2.1"
+  },
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,7 +26,6 @@
     "@nxus/core": "^2.3.10",
     "@nxus/renderer": "^2.3.0",
     "@nxus/router": "^2.3.0",
-    "@nxus/pipeliner": "^2.3.0",
     "nxus-static-site": "^2.3.0" 
   }
 }
