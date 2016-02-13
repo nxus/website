@@ -23,6 +23,7 @@
     "@nxus/core": "^2.3.10",
     "@nxus/renderer": "^2.3.0",
     "@nxus/router": "^2.3.0",
+    "@nxus/pipeliner": "^2.3.0",
     "nxus-static-site": "^2.3.0" 
   }
 }
