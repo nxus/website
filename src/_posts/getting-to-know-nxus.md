@@ -1,6 +1,6 @@
 ---
 title: "Getting to know Nxus"
-date: 02-13-2015
+date: 02-13-2016
 layout: post
 author: mjreich
 tags:

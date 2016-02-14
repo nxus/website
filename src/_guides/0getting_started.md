@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 layout: guide
-updated: 02-13-2015
+updated: 02-13-2016
 ---
 The goal of Nxus is to make building interactive, data-rich web apps as easy as possible. Specifically, we want to create a re-usable foundation of common components which can be easily reused, leaving you with more time to focus on the unique code for your project.
 
@@ -37,7 +37,10 @@ The @nxus/core module is the base of any Nxus application, and is the first thin
 ```
 > npm install @nxus/core --save
 ```
-**Note**: The `--save` at the end is important: it lets Nxus know which module you'd like to have enabled. Without it your modules won't boot.
+
+<div class="alert alert-info" role="alert">
+The `--save` at the end is important: it lets Nxus know which module you'd like to have enabled. Without it your modules won't boot.
+</div>
 
 Now, create a new file called `index.js` and paste in the following code:
 ```
@@ -69,7 +72,10 @@ This means its working. Now let's create a route to render a page.  Create a new
 ```
 > mkdir modules
 ```
-**Note:** One of the key ideas behind Nxus is that everything is a self-contained module. This ensures that each part of an application can be easily re-used later on, or contributed back to the Nxus community.
+
+<div class="alert alert-info" role="alert">
+  One of the key ideas behind Nxus is that everything is a self-contained module. This ensures that each part of an application can be easily re-used later on, or contributed back to the Nxus community.
+</div>
 
 Now in `modules`, create a new directory called `homepage` with a file inside called `index.js`.  
 
@@ -89,7 +95,9 @@ module.exports = function(app) {
 ```
 Let's break this down. Every module is a function or class that accepts an `app` object. The `app` object is the core application, and how you interact with every other component in Nxus.  Since we want to define a route, the first thing we do is get the `router` module, using `app.get('router')`.  To define our route, we call the `route` method, passing in an HTTP param (`'get'`), a path (`'/'`) and a handler function. This handler uses the ExpressJS style `res, res` signature.  Finally, we return our text for the route `res.send('Hello world!')`.
 
-**Note:** If you'd like to learn more about Nxus modules, checkout [Anatomy of a module]().
+<div class="alert alert-info" role="alert">
+If you'd like to learn more about Nxus modules, checkout [Anatomy of a module]().
+</div>
 
 Now, let's run the app and see what it looks like.
 
@@ -122,7 +130,9 @@ Run the app again using `node index.js` and go to `localhost:3000`.  Now you'll 
 
 The `@nxus/base-ui` package does a lot behind the scenes, installing a couple of other handy modules `@nxus/renderer` and `@nxus/templater`.  
 
-**Note**: read more about the [Renderer]() and [Templater]() to learn everything they can do.
+<div class="alert alert-info" role="alert">
+Read more about the [Renderer]() and [Templater]() to learn everything they can do.
+</div>
 
 Instead of return raw text, we're going to use a template called `page` to render the page.  Templater:render() returns a promise, which we send the output to res.send().
 
@@ -149,7 +159,9 @@ module.exports = function(app) {
 ```
 Now if you go back to `localhost:3000` in your browser, you'll see there is a new menu item called `Settings`. Click on it, and you'll see your brand new settings page.
 
-**Note:** Read more about all the options available for admin modules in the [Admin-UI] README.
+<div class="alert alert-info" role="alert">
+  Read more about all the options available for admin modules in the [Admin-UI] README.
+</div>
 
 ## Step 6: Adding users and authentication
 What's us is an administration interface if anyone can access it? Well, let's add some users and authentication to our Nxus app.
