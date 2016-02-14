@@ -1,6 +1,7 @@
 ---
 title: Getting Started
 layout: guide
+updated: 02-13-2015
 ---
 The goal of Nxus is to make building interactive, data-rich web apps as easy as possible. Specifically, we want to create a re-usable foundation of common components which can be easily reused, leaving you with more time to focus on the unique code for your project.
 
@@ -49,7 +50,8 @@ That's it, you've just created your first Nxus app! Now, go back to the command 
 > node index.js
 ```
 and you should see the following:
-[[insert image]]
+
+<img src="/img/screenshot_1.png" style="width: 500px;">
 
 ## Step 3: Adding Routes
 Though you can use Nxus for everything from Mobile apps to IoT devices, we're making a web app, and every web app needs routes. Nxus uses ExpressJS for basic routing, through the @nxus/router module.  So let's install that.
@@ -97,7 +99,8 @@ Now, let's run the app and see what it looks like.
 ```
 
 If everything went well, you should see the same log with no errors. If you go to `localhost:3000` in your browser, you'll see the following:
-[[ insert screenshot ]]
+
+<img src="/img/screenshot_2.png" style="width: 500px;">
 
 ## Step 4: Adding Basic UI
 Ok, now the fun starts.  Every web app needs a good UI, and text isn't going to cut it.  So let's install the @nxus/base-ui module.
@@ -115,7 +118,7 @@ module.exports = function(app) {
 ```
 Run the app again using `node index.js` and go to `localhost:3000`.  Now you'll see quite a lot is different.  
 
-[[ insert screenshot ]]
+<img src="/img/screenshot_3.png" style="width: 500px;">
 
 The `@nxus/base-ui` package does a lot behind the scenes, installing a couple of other handy modules `@nxus/renderer` and `@nxus/templater`.  
 
@@ -134,7 +137,7 @@ Back in your project folder, run the following command:
 ```
 Now, if you start the app with `node index.js`, you'll notice more output in the console.  To test the admin module, go to `localhost:3000/admin` in your browser.  You'll see the following:
 
-[[ insert screenshot ]]
+<img src="/img/screenshot_4.png" style="width: 500px;">
 
 This is the basic admin interface with a simple homepage.  Let's add our own settings page.
 
@@ -159,12 +162,33 @@ Normally, at this point you'd have to define a user model, add in authorization 
 
 Now, start the app with `node index.js` and you'll see a lot more going on in the app.
 
+<img src="/img/screenshot_5.png" style="width: 500px;">
+
 Specifically, look for the line at the end of the console output that looks like
 ```
 > default user created admin@nxus.org with password XXXXXX
 ```
 Now go back to your browser and try `localhost:3000/admin`.  You should see a login screen.  Enter in the username and password from your console.  Now you should be redirected to localhost:3000 and logged in!  Go back to `localhost:3000/admin`.
 
-[[ insert screenshot ]]
+<img src="/img/screenshot_6.png" style="width: 500px;">
 
 You should see a new menu item called `Users`. If you click on this, you'll find a complete section for creating, editing and deleting users.
+
+## Nxus In Depth
+
+Now that you have a basic understanding of Nxus and how to build an app, you'll want to take a look at these additional guides and resources.
+
+<div class="row">
+  <div class="col-md-4">
+    <ul>
+      <li>[Read the API Docs](http://docs.gonxus.org/)</li>
+      <li>[Creating Modules](/guides/creating-modules.html)</li>
+      <li>[Creating Templates](/guides/creating-templates.html)</li>
+  </div>
+  <div class="col-md-4">
+
+  </div>
+</div>
+
+  
+
