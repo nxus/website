@@ -9,7 +9,7 @@ title: Blog
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <h1>The Nxus Blog</h1>
                 <hr>
-              <% site.posts.forEach(function(post) { %>
+              <% site.posts.reverse().forEach(function(post) { %>
               <div class="post-preview">
                     <a href="<%= post.url %>">
                         <h2 class="post-title">
